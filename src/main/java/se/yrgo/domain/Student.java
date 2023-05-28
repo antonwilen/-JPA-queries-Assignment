@@ -12,9 +12,6 @@ public class Student {
     @Column(unique = true, nullable = false)
     private String enrollmentID;
     private String name;
-    //@ManyToOne
-    //@JoinColumn(name = "TUTOR_FK")
-    //private Tutor tutor;
     @Column(name = "NUM_COURSES")
     private Integer numberOfCourses;
     @Embedded
@@ -64,17 +61,6 @@ public class Student {
     public String toString() {
         return name + " lives at: " + address;
     }
-
-
-
-
-    /*public void allocateTutor(Tutor tutor){
-        this.tutor = tutor;
-    }
-
-    public String getTutorName(){
-        return tutor.getName();
-    }*/
 
     public String getEnrollmentID() {
         return enrollmentID;

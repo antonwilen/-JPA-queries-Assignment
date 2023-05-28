@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import java.util.*;
 
 @Entity
-@NamedQuery(name = "salaryAbove10", query = "SELECT t FROM Tutor AS t WHERE salary > 10000")
 public class Tutor {
     @Column(unique = true, nullable = false)
     private String tutorId;

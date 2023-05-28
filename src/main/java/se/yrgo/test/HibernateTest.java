@@ -99,7 +99,6 @@ public class HibernateTest {
         List<Tutor> tutors = query5.getResultList();
         for(Tutor tutor:tutors){
             System.out.println(tutor);
-
         }
 
 
